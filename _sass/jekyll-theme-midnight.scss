@@ -217,9 +217,9 @@ dt {
           text-align: center;
 
           &:hover {
-            background: linear-gradient(#f86f86, #e75e75);
-            background-color: #d64d64;
-            border: 1px solid #e75e75;
+            background: linear-gradient(#e75e75, #d64d64);
+            background-color: #c53c53;
+            border: 1px solid #d64d64;
             box-shadow: inset 0px 1px 1px rgba(0, 0, 0, .2), 0px 1px 0px rgba(0, 0, 0, .0);
           }
         }
