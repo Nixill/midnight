@@ -32,15 +32,21 @@
             </li>
           {% endunless %}
 
-          {% if page.github %}
-            <li class="download">
-              <a href="{{page.github}}">View on GitHub</a>
-            </li>
-          {% endif %}
+          {% if page.title or page.github %}
+            {% if page.github %}
+              <li class="downloads">
+                <a href="{{page.github}}">View on GitHub</a>
+              </li>
+            {% endif %}
 
-          {% if page.download %}
-            <li class="download">
-              <a href="{{page.download}}">Go to downloads</a>
+            {% if page.download %}
+              <li class="downloads">
+                <a href="{{page.download}}">Go to download(s)</a>
+              </li>
+            {% endif %}
+
+            <li class="title">
+              {{ page.downloadTitle }}
             </li>
           {% endif %}
         </ul>
