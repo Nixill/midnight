@@ -167,6 +167,14 @@ dt {
   font-weight: normal;
 }
 
+figure {
+  margin-bottom: 12pt;
+
+  figcaption {
+    text-align: center;
+    font-style: oblique;
+  }
+}
 
 #header {
   z-index: 100;
