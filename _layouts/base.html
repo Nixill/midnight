@@ -7,10 +7,7 @@
 
     {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <script
-      src="https://code.jquery.com/jquery-1.12.4.min.js"
-      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-      crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
     <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -26,29 +23,26 @@
     <div id="header">
       <nav>
         <ul>
-          {% unless page.url == "/" %}
+          {%- unless page.url == "/" -%}
             <li class="fork">
               <a href="/">Home</a>
             </li>
-          {% endunless %}
-
-          {% if page.title or page.github %}
-            {% if page.github %}
+          {%- endunless -%}
+          {%- if page.title or page.github -%}
+            {%- if page.github -%}
               <li class="downloads">
                 <a href="{{page.github}}">View on GitHub</a>
               </li>
-            {% endif %}
-
-            {% if page.download %}
+            {%- endif -%}
+            {%- if page.download -%}
               <li class="downloads">
                 <a href="{{page.download}}">Go to download(s)</a>
               </li>
-            {% endif %}
-
+            {%- endif -%}
             <li class="title">
               {{ page.downloadTitle }}
             </li>
-          {% endif %}
+          {%- endif -%}
         </ul>
       </nav>
     </div>
