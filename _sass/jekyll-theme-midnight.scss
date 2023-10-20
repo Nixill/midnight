@@ -176,6 +176,20 @@ figure {
   }
 }
 
+.image-left {
+  display: block;
+  margin-right: 10px;
+  max-width: 20%;
+  float: left;
+}
+
+.image-right {
+  display: block;
+  margin-right: 10px;
+  max-width: 20%;
+  float: right;
+}
+
 #header {
   z-index: 100;
   left: 0;
