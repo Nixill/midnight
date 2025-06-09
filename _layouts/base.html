@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     {% if page.description %}<meta property="og:description" content="{{ page.description | xml_escape }}"/>{% endif %}
-    {% if page.image %}<meta property="og:image" content="{{ page.image | xml_escape }}"/>{% endif %}
+    {% if page.image %}<meta property="og:image" content="{{ page.image | absolute_url | xml_escape }}"/>{% endif %}
     <meta name="theme-color" content="#b42b42" />
 
     {% seo %}
