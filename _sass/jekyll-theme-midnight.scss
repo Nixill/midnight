@@ -56,10 +56,12 @@ h3 {
 
 h1 {
   font-size: 28px;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 h2 {
   font-size: 24px;
+  border-bottom: 1px dashed #e8e8e8;
 }
 
 h4,
@@ -74,6 +76,7 @@ h3 {
   font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: normal;
   color: #b6b6b6;
+  border-bottom: 1px dotted #b42b42;
 }
 
 a {
